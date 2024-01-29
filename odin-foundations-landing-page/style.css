@@ -1,0 +1,232 @@
+/* ========== FONTS ========== */
+@font-face {
+    font-family: "Roboto";
+    src: url("Roboto-Light-webfont.woff") format("woff");
+}
+
+/* ========== VARIABLES CSS ========== */
+:root {
+    /* Colors */
+    --first-bg-color: #1f2937;
+    --second-bg-color: #e5e7eb;
+    --third-bg-color: #3882f6;
+
+    --first-font-color: #f9faf8;
+    --second-font-color: #e5e7eb;
+    --third-font-color: #1f2937;
+}
+
+/* Reseting the styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+ul {
+    list-style: none;
+    /*Remove bullets from list*/
+}
+
+/* Remove text decoration from a tags */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ========== HEADER ========== */
+.header__container {
+    background-color: var(--first-bg-color);
+    color: var(--first-font-color);
+    display: flex;
+    justify-content: center;
+}
+
+.primary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 960px;
+    height: 50px;
+}
+
+.header-logo {
+    font-size: 24px;
+}
+
+.nav__menu { 
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    gap: 20px;
+    color: var(--second-font-color);
+}
+
+
+/* ========== HERO ========== */
+.hero__container {
+    background-color: var(--first-bg-color);
+    display: flex;
+    justify-content: center;
+    color: var(--first-font-color);
+    height: 500px;
+}
+
+.hero__content {
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero__content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    width: 500px;
+}
+
+.hero__main-text {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.hero__secondary-text {
+    color: var(--second-font-color);
+    font-size: 18px;
+}
+
+.hero__button {
+    background-color: var(--third-bg-color);
+    color: var(--first-font-color);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+/* ========== CARDS SECTION ========== */
+.first-section__container { 
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.first-section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 960px;
+}
+
+.first-section__title {
+    color: var(--first-bg-color);
+    font-weight: bolder;
+    font-size: 38px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 960px;
+}
+
+.card__text {
+    text-align: center;
+    color: var(--third-font-color);
+    font-size: 16px;
+    width: 150px;
+}
+
+.card-image {
+    border-color: var(--third-bg-color);
+    border-radius: 10px;
+    border-style: solid;
+}
+
+
+/* ========== QUOTE SECTION ========== */
+.second-section__container {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    background-color: var(--second-bg-color);
+}
+
+.second-section__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 920px;
+}
+
+.quote__text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: light;
+    color: var(--third-font-color);
+}
+
+.signature__container {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+
+/* ========== SIGN IN SECTION ========== */
+.third-section__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.third-section__content {
+    background-color: var(--third-bg-color);
+    color: var(--first-font-color);
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 10px;
+    width: 960px;
+    padding: 40px 100px;
+}
+
+.third-section__button {
+    background-color: transparent;
+    color: var(--first-font-color);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-color: var(--first-font-color);
+    border-radius: 10px;
+    border-style: solid;
+}
+
+
+/* ========== FOOTER ========== */
+.footer {
+    background-color: var(--first-bg-color);
+    color: var(--first-font-color);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
